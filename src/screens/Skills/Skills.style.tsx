@@ -39,9 +39,15 @@ export const Block = styled.div`
     @media (max-width: 460px) {
         min-width: 80vw;
         height: 140px;
-        margin: 0;
+        &:nth-child(2n) {
+            margin-left: 0px;
+        }
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: 0px;
+        }
         &:not(:first-child) {
-            margin-top: 10px
+            margin-top: 10px;
         }
     }
 `;
