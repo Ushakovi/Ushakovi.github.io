@@ -1,0 +1,180 @@
+@import 'vars'
+@import 'base'
+@import 'fonts'
+@import 'grid'
+@import 'preloader'
+
+.navbar
+    background: #172141
+    z-index: 100
+    &-wrap
+        min-height: 80px
+        display: flex 
+        align-items: center 
+        justify-content: space-around
+    &__menu
+        display: flex
+        font: 16px $sansReg
+        flex-wrap: wrap
+        align-items: center 
+    &__item
+        margin-right: 30px
+        list-style: none
+        white-space: nowrap
+    &__link
+        text-transform: uppercase
+        color: #6d7387
+        text-decoration: none
+        transition: 0.3s
+        &:hover
+            color: #fff           
+    &__logo
+        margin-right: 20px   
+    &__button
+        display: block
+        text-decoration: none
+        color: #fff
+        font: 15px $sansBold
+        border: 2px solid $blueColor
+        padding: 1em 2em
+        text-transform: uppercase
+        transition: 0.4s
+        text-align: center
+        background-color: transparent
+        cursor: pointer
+        white-space: nowrap
+        &:hover
+            background-color: $blueColor
+.menu-button
+    width: 50px
+    height: 80px
+    display: flex
+    visibility: hidden
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: transparent
+    border: none
+    position: absolute
+    &__line
+        width: 40px
+        height: 7px
+        background-color: #fff
+        border-radius: 50px
+        transition: all 0.5s
+        &:nth-child(2)
+            margin: 6px 0
+.header
+    min-height: 1010px
+    background: #0d162b url('../img/header/header-bg.png') no-repeat 85% 40%
+    padding: 200px 100px 80px 100px
+    &-wrap
+        visibility: hidden
+        opacity: 0
+        transition: all 0.8s linear
+        transform: translate(10%)
+        &_active
+            visibility: visible
+            opacity: 1
+            transform: translate(0)
+    &__title
+        margin: 40px 0 50px 0
+        font: 6vw $ubuntuBold
+        text-transform: uppercase
+        color: #fff
+        text-shadow: 3px 3px 7px $blueColor
+    &__footer
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: 90px
+        flex-wrap: wrap
+.about
+    display: flex
+    &__text
+        color: #fff
+        font: 18px $sansReg
+        &:nth-child(1)
+            padding-right: 20px
+            border-right: 1px solid #fff
+        &:nth-child(2)
+            padding: 0 20px 0 20px
+            border-right: 1px solid #fff
+        &:nth-child(3)
+            padding-left: 20px
+.sponsors
+    display: flex
+    align-items: center
+    &__item
+        max-width: 100%
+        height: auto
+        &:nth-child(2)
+            margin-left: 60px
+.geolocation
+    display: flex
+    flex-wrap: wrap
+    &__item
+        text-align: center
+        font: 20px $sansReg
+        color: #fff
+        max-width: 30%
+        &:first-child
+            margin-right: 80px
+.exp
+    min-height: 770px
+    background: #0d162b url('../img/exp-bg.png') no-repeat top/cover
+    text-align: center
+    padding-top: 280px  
+    &__title 
+        font: 48px $ubuntuBold
+        color: #fff
+        margin-bottom: 80px
+    &__text
+        font: 24px $sansLight
+        color: #fff
+.advantages
+    background-color: #0d162b
+    padding: 150px 0
+    &__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        margin: 0 20px 50px 20px
+    &__about
+        color: #fff
+    &__title
+        font: 48px $ubuntuBold
+    &__text
+        font: 24px $sansLight
+        margin-top: 45px
+    &__img 
+        max-width: 50%
+.participation
+    min-height: 1000px
+    background: #0d162b url('../img/parbg.png') no-repeat top/cover
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    &__title 
+        color: #fff
+        font: 48px $ubuntuBold
+        margin-bottom: 70px
+        text-align: center
+    &__content
+        background-color: rgba(52, 65, 70, 0.3)
+        width: 460px
+        padding: 50px
+    &__label
+        font: 18px $sansLight
+        color: rgba(255, 255, 255, 0.5)
+    &__button 
+        margin: 35px auto 0 auto
+        width: 70%
+    &__link
+        text-decoration: none
+        color: #0096d2
+    
+@import 'media'

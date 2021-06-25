@@ -1,0 +1,130 @@
+@import 'vars'
+@import 'base'
+@import 'fonts' 
+@import 'preloader'
+
+.navbar
+    background: #191919
+    padding: 25px 0
+    color: #fff
+    text-align: center
+    &__time
+        font-size: 12px
+        & > span
+            font-family: $proximaBold
+    &__phone
+        font-size: 17px
+    &__button
+        width: 160px
+        height: 50px
+        font-size: 12px
+.header
+    min-height: 860px
+    background: url(../img/header-bg.png) top/contain no-repeat
+    white-space: nowrap
+    &__wrapper
+        background-color: $yellow
+        min-height: 860px
+        visibility: hidden
+        opacity: 0
+        transition: all 0.8s linear 
+        transform: translate(0, 10%)
+        &_active
+            opacity: 1
+            visibility: visible
+            transform: translate(0)
+    &__title
+        font-family: $proximaBold
+        font-size: 38px
+        text-transform: uppercase
+        margin: 100px 0 50px 100px
+    &__subtitle
+        font-family: $proximaBold
+        font-size: 25px
+        margin: 0 0 80px 100px
+    &-advantage
+        margin-left: 100px
+        &__item
+            display: flex
+            align-items: center
+            padding-bottom: 60px
+            img
+                padding-right: 27px
+.price
+    min-height: 500px
+    background: url('../img/price-bg.png') top/contain no-repeat
+    text-align: right
+    &__title
+        font-family: $proximaBold
+        font-size: 30px
+        display: flex
+        justify-content: flex-end  
+    &__time
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        margin-top: 30px
+    &__text
+        font-size: 14px
+    &__img
+        margin: 0 30px 0 30px
+    &__button
+        margin: 30px 0px 0px 0px  
+.advantages
+    min-height: 587px
+    background: #08243e
+    text-align: center
+    &__item
+        margin-top: 100px
+    &__title
+        color: #fff
+        margin-top: 45px
+.search
+    min-height: 587px
+    background: #08243e url('../img/search-bg.png') top/cover no-repeat
+    text-align: center
+    &__phone
+        margin-top: 30px
+    &__text
+        color: #fff
+        margin-bottom: 16px
+    &__link
+        font-size: 30px
+    &__button
+        margin: 60px 0px 0px 0px
+.recommendations
+    min-height: 570px
+    text-align: center
+    &__title
+        color: #000
+    &__subtitle
+        color: #000
+        padding-bottom: 100px
+    &__img
+        padding-bottom: 45px
+.consultation
+    min-height: 470px
+    background: url('../img/consultation/consultation-bg.png') right/cover no-repeat
+    text-align: center
+    &__phone
+        text-align: center
+    &__text
+        color: #fff
+        margin-bottom: 16px
+    &__link
+        font-size: 30px
+    &__button
+        margin: 60px 0px 30px 0px
+.footer 
+    background: #191919
+    padding: 25px 0
+    text-align: center
+.contacts
+    text-align: center
+    &__text
+        color: #fff
+        padding-bottom: 5px
+              
+
+
+@import 'media'       

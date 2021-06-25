@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Дизайн конференция</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-wrap">    
+                <a href="#"><img class="logo navbar__logo" src="img/mlogo.png" alt="logo"></a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item"><a href="#" class="navbar__link">О конференции</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Спикеры</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Программа</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Фотогалерея</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Организаторы</a></li>
+                </ul>
+                <div class="menu-button">
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                </div>
+                <button type="button" class="navbar__button">Купить билет</button> 
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap">
+                <div class="geolocation">
+                    <div class="geolocation__item">
+                        <img src="img/header/geo.png" alt="geo" class="geolocation__img">       
+                        <p class="geolocation__text">Культурный центр «ЗИЛ»</p>
+                    </div>
+                    <div class="geolocation__item">
+                        <img src="img/header/calendar.png" alt="calendar" class="geolocation__img">
+                        <p class="geolocation__text">7-9 апреля 2020</p>
+                    </div>
+                </div>
+                <h1 class="header__title">Дизайн<br>Конференция</h1>
+                <div class="about">
+                    <p class="about__text">О бизнесе и творестве</p>
+                    <p class="about__text">О трудных клиентах и безудержном вдохновении</p>
+                    <p class="about__text">О принципах работы, пользе и результатах</p>
+                </div>
+                <div class="header__footer">
+                    <a class="button header__button">Зарегистрироваться</a> 
+                    <div class="sponsors">
+                        <img src="img/header/legrand.png" alt="legrand" class="sponsors__item">
+                        <img src="img/header/zil.png" alt="zil" class="sponsors__item">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="exp">
+            <div class="container">
+                <h2 class="exp__title">Опыт практиков</h2>
+                <p class="exp__text">Узнайте, как эффективно работать и зарабатывать<br>в сфере дизайна, визуализации, проектирования<br>и строительства</p>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container owl-carousel owl-theme">
+                <div class="advantages__item">
+                    <div class="advantages__about">  
+                        <h2 class="advantages__title">О чем молчат<br>Дизайн-эксперты?</h2>
+                        <p class="advantages__text">Спикеры поделятся практическими знаниями,<br>особенностями подхода, секретами и фишками.<br> Каждый найдет свое.</p>
+                    </div>
+                    <img src="img/advantages-1.png" alt="advantages" class="advantages__img">
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__about">
+                        <h2 class="advantages__title">Как заработать<br>на дизайне?</h2>
+                        <p class="advantages__text">Готовые стратегии позиционирования и развития<br>своей студии. Мотивация сотрудников,<br>делегирование и удаленная работа.</p>
+                    </div>
+                    <img src="img/advantages-2.png" alt="advantages" class="advantages__img">
+                </div>
+            </div>
+        </section>
+        <section class="participation">
+            <h2 class="participation__title">Принять участие</h2>
+            <div class="participation__content">
+                <form action="#" class="participation__form">
+                    <label class="participation__label" for="name">Фамилия Имя Отчество</label>
+                    <input class="input" type="text" id="name" placeholder="Ivanov Ivan Ivanovich">
+                    <label class="participation__label" for="job">Должность/Компания</label>
+                    <input class="input" type="text" id="job" placeholder="Manager/Avito">
+                    <label class="participation__label" for="email">E-mail</label>
+                    <input class="input" type="text" id="email" placeholder="email@example.com">
+                    <label class="participation__label" for="tel">Телефон</label>
+                    <input class="input" type="tel" id="tel" placeholder="+7(___) ___-__-__">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label class="participation__label" for="checkbox">Я согласен(-на) с <a class="participation__link" href="#">условиями обработки персональных данных</a></label>
+                    <button type="submit" class="button participation__button">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
