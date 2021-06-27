@@ -5,4 +5,7 @@ export const Title = styled.h1`
     font-size: 60px;
     font-family: 'Museo Black', sans-serif;
     color: #fff;
+    @media (max-width: 400px) {
+        font-size: 13vw;
+    }
 `;

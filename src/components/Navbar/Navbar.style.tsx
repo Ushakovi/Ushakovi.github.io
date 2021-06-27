@@ -21,6 +21,9 @@ export const NavList = styled.nav<{ showContent: boolean, showNav: boolean }>`
         opacity: ${({ showNav }) => showNav ? '1': '0'};
         visibility: ${({ showNav }) => showNav ? 'visible': 'hidden'};
         transform: ${({ showNav }) => showNav ? 'translate(0px, 0px)': 'translate(-40px, -40px)'};
+        @media (max-height: 750px) {
+            top: 12%;
+        }
     }
 `;
 

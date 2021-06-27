@@ -49,6 +49,9 @@ export const Block = styled.div`
         &:not(:first-child) {
             margin-top: 10px;
         }
+        @media (max-height: 700px) {
+            height: 120px;
+        }
     }
 `;
 
