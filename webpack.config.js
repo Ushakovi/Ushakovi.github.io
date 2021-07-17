@@ -6,7 +6,8 @@ module.exports = {
     entry: path.join(__dirname, 'src', 'index.tsx'),
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'build')
+        path: path.resolve(__dirname, 'build'),
+        assetModuleFilename: 'assets/[name][ext]',
     },
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
@@ -22,25 +23,11 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif|svg)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'assets/img/[name].[ext]',
-                        },
-                    },
-                ],
+                type: "asset/resource",
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: 'assets/fonts/[name].[ext]',
-                        },
-                    },
-                ],
+                type: "asset",
             },
         ],
     },
