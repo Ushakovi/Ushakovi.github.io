@@ -24,8 +24,6 @@ Frameworks & Libraries:
 - Vue Router
 - Vuex
 - jQuery
-- Jest
-- Enzyme
 - Express
 
 Technologies:
