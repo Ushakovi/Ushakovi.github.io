@@ -26,7 +26,7 @@ const Skills: React.FC = () => {
         {
             img: img_3,
             title: 'Frameworks & Libraries',
-            textStrings: ['React', 'React Router Dom', 'Redux', 'Vue', 'Vue Router', 'Vuex', 'jQuery', 'Jest', 'Enzyme', 'Express']
+            textStrings: ['React', 'React Router Dom', 'Redux', 'Vue', 'Vue Router', 'Vuex', 'jQuery', 'Express']
         },
         {
             img: img_4,
