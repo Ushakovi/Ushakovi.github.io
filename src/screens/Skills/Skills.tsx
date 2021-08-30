@@ -15,43 +15,39 @@ const skillsBlocks: ISkillsBlock[] = [
     {
         img: img_1,
         title: 'Html & Css',
-        textStrings: ['Flexbox', 'Grid', 'Animate', 'Responsiveness', 'Adaptivity', 'Validity']
+        textStrings: ['Flexbox', 'Grid', 'Animate', 'Responsiveness', 'Adaptivity', 'Validity'],
     },
     {
         img: img_2,
         title: 'JavaScript',
-        textStrings: ['ECMAscript 5+', 'TypeScript', 'Node.js']
+        textStrings: ['ECMAscript 5+', 'TypeScript', 'Node.js'],
     },
     {
         img: img_3,
         title: 'Frameworks & Libraries',
-        textStrings: ['React', 'React Router Dom', 'Redux', 'Vue', 'Vue Router', 'Vuex', 'jQuery', 'Express']
+        textStrings: ['React', 'React Router Dom', 'Redux', 'Vue', 'Vue Router', 'Vuex', 'jQuery', 'Express'],
     },
     {
         img: img_4,
         title: 'Technologies',
-        textStrings: ['Git', 'Webpack', 'Babel', 'Gulp', 'Styled-components', 'Sass/SCSS', 'Bootstrap', 'BEM']
-    }
+        textStrings: ['Git', 'Webpack', 'Babel', 'Gulp', 'Styled-components', 'Sass/SCSS', 'Bootstrap', 'BEM'],
+    },
 ];
 
 const Skills: React.FC = () => {
     return (
         <List>
-            {
-                skillsBlocks.map((block: ISkillsBlock) => (
-                    <Block>
-                        <Image src={block.img} />
-                        <Subtitle>{block.title}</Subtitle>
-                        <TextWrapper>
-                            {
-                                block.textStrings.map((string: string) => (
-                                    <Text>{string}</Text>
-                                ))
-                            }
-                        </TextWrapper>
-                    </Block>
-                ))
-            }
+            {skillsBlocks.map((block: ISkillsBlock) => (
+                <Block>
+                    <Image src={block.img} />
+                    <Subtitle>{block.title}</Subtitle>
+                    <TextWrapper>
+                        {block.textStrings.map((string: string) => (
+                            <Text>{string}</Text>
+                        ))}
+                    </TextWrapper>
+                </Block>
+            ))}
         </List>
     );
 };
