@@ -2,8 +2,8 @@ import React, { Dispatch, SetStateAction } from 'react';
 import { Container, Element } from './BurgerButton.style';
 
 interface IBurgerButtonProps {
-    showNav: boolean,
-    setShowNav: Dispatch<SetStateAction<boolean>>
+    showNav: boolean;
+    setShowNav: Dispatch<SetStateAction<boolean>>;
 }
 
 const BurgerButton: React.FC<IBurgerButtonProps> = ({ showNav, setShowNav }) => {

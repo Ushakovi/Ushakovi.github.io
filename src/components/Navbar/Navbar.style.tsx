@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
-export const NavList = styled.nav<{ showContent: boolean, showNav: boolean }>`
+export const NavList = styled.nav<{ showContent: boolean; showNav: boolean }>`
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 30px;
-    opacity: ${({ showContent }) => showContent ? '1' : '0'};
+    opacity: ${({ showContent }) => (showContent ? '1' : '0')};
     transition: all 0.5s;
     @media (max-width: 550px) {
         width: 70%;
@@ -18,9 +18,9 @@ export const NavList = styled.nav<{ showContent: boolean, showNav: boolean }>`
         left: 15%;
         top: 10%;
         z-index: 1;
-        opacity: ${({ showNav }) => showNav ? '1': '0'};
-        visibility: ${({ showNav }) => showNav ? 'visible': 'hidden'};
-        transform: ${({ showNav }) => showNav ? 'translate(0px, 0px)': 'translate(-40px, -40px)'};
+        opacity: ${({ showNav }) => (showNav ? '1': '0')};
+        visibility: ${({ showNav }) => (showNav ? 'visible': 'hidden')};
+        transform: ${({ showNav }) => (showNav ? 'translate(0px, 0px)': 'translate(-40px, -40px)')};
         @media (max-height: 750px) {
             top: 12%;
         }
@@ -29,8 +29,8 @@ export const NavList = styled.nav<{ showContent: boolean, showNav: boolean }>`
 
 export const NavLink = styled(Link)<{ active?: boolean }>`
     font-family: 'Museo Black', sans-serif;
-    color: ${({active}) => active ? '#000' : '#fff'};
-    background-color: ${({active}) => active ? '#fff' : 'transparent'};
+    color: ${({ active }) => (active ? '#000' : '#fff')};
+    background-color: ${({ active }) => (active ? '#fff' : 'transparent')};
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;

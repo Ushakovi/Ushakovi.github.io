@@ -6,9 +6,9 @@ import img_3 from '../../assets/img/icon_frameworks.png';
 import img_4 from '../../assets/img/icon_teh.png';
 
 interface ISkillsBlock {
-    img: string,
-    title: string,
-    textStrings: string[]
+    img: string;
+    title: string;
+    textStrings: string[];
 };
 
 const skillsBlocks: ISkillsBlock[] = [

@@ -24,8 +24,8 @@ export const LoaderWrapper = styled.div<{ showLoader: boolean }>`
     left: 0;
     z-index: 100;
     transition: 0.5s all;
-    opacity: ${({ showLoader }) => showLoader ? '1' : '0'};
-    visibility: ${({ showLoader }) => showLoader ? 'visible' : 'hidden'};
+    opacity: ${({ showLoader }) => (showLoader ? '1' : '0')};
+    visibility: ${({ showLoader }) => (showLoader ? 'visible' : 'hidden')};
 `;
 
 export const LoaderBlock = styled.div`

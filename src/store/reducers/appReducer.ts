@@ -2,8 +2,8 @@ import { appActionType } from "../actions/appActionsTypes";
 import { APP_LOADER_HIDE, APP_CONTENT_SHOW } from '../constants/actionsTypes';
 
 interface IAppDefaultState {
-    showLoader: boolean,
-    showContent: boolean
+    showLoader: boolean;
+    showContent: boolean;
 };
 
 const appDefaultState: IAppDefaultState = {
