@@ -36,3 +36,5 @@ Technologies:
 - Sass/SCSS
 - Bootstrap
 - BEM
+- Jest
+- Enzyme
