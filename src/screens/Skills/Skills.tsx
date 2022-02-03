@@ -30,7 +30,7 @@ const skillsBlocks: ISkillsBlock[] = [
     {
         img: img_4,
         title: 'Technologies',
-        textStrings: ['Git', 'Webpack', 'Babel', 'Gulp', 'Styled-components', 'Sass/SCSS', 'Bootstrap', 'BEM'],
+        textStrings: ['Git', 'Webpack', 'Babel', 'Gulp', 'Styled-components', 'Sass/SCSS', 'Bootstrap', 'BEM', 'Jest', 'Enzyme'],
     },
 ];
 
