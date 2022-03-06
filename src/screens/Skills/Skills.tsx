@@ -19,18 +19,18 @@ const skillsBlocks: ISkillsBlock[] = [
     },
     {
         img: img_2,
-        title: 'JavaScript',
-        textStrings: ['ECMAscript 5+', 'TypeScript', 'Node.js'],
+        title: 'Languages',
+        textStrings: ['ECMAscript 5+', 'TypeScript', 'SQL'],
     },
     {
         img: img_3,
         title: 'Frameworks & Libraries',
-        textStrings: ['React', 'React Router Dom', 'Redux', 'Vue', 'Vue Router', 'Vuex', 'jQuery', 'Express'],
+        textStrings: ['React', 'React Router', 'Redux', 'Vue', 'Vue Router', 'Vuex', 'jQuery', 'Node.js', 'Express'],
     },
     {
         img: img_4,
         title: 'Technologies',
-        textStrings: ['Git', 'Webpack', 'Babel', 'Gulp', 'Styled-components', 'Sass/SCSS', 'Bootstrap', 'BEM', 'Jest', 'Enzyme'],
+        textStrings: ['Git', 'Webpack', 'Babel', 'Gulp', 'Sass/Scss', 'Styled-components', 'Bootstrap', 'BEM', 'Jest', 'Enzyme'],
     },
 ];
 
