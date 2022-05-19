@@ -25,12 +25,12 @@ const skillsBlocks: ISkillsBlock[] = [
     {
         img: img_3,
         title: 'Frameworks & Libraries',
-        textStrings: ['React', 'React Router', 'Redux', 'Vue', 'Vue Router', 'Vuex', 'jQuery', 'Node.js', 'Express'],
+        textStrings: ['React', 'Redux', 'MobX', 'Vue', 'Vuex', 'jQuery', 'Node.js', 'Express'],
     },
     {
         img: img_4,
         title: 'Technologies',
-        textStrings: ['Git', 'Webpack', 'Babel', 'Gulp', 'Sass/Scss', 'Styled-components', 'Bootstrap', 'BEM', 'Jest', 'Enzyme'],
+        textStrings: ['Git', 'Webpack', 'GraphQL', 'Sass/Scss', 'Styled-components', 'Jest', 'Enzyme'],
     },
 ];
 
